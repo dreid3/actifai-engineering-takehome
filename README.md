@@ -58,9 +58,11 @@ Retrieves sales data per user for a given month, including total sales, average 
 
 **Examples:**  
 
-`/user_sales?month=2021-01` `/user_sales?month=2021-01&user_id=1` `/user_sales?month=2021-01&group_id=1`
-
----
+```
+/user_sales?month=2021-01 
+/user_sales?month=2021-01&user_id=1 
+/user_sales?month=2021-01&group_id=1
+```
 
 ### **2. Group Sales**  
 **Endpoint:** `GET /group_sales`  
@@ -74,9 +76,10 @@ Retrieves sales data per group for a given month, including total sales, average
 
 **Examples:**  
 
-`/group_sales?month=2021-01` `/group_sales?month=2021-01&group_id=1`
-
----
+```
+/group_sales?month=2021-01 
+/group_sales?month=2021-01&group_id=1
+```
 
 ### **3. User Sales (Date Range)**  
 **Endpoint:** `GET /user_sales_range`  
@@ -92,4 +95,8 @@ Retrieves sales data per user for a given date range, including total sales, ave
 
 **Examples:**  
 
-`/user_sales_range?start=2021-01-01&end=2021-01-31` `/user_sales_range?start=2021-01-01&end=2021-01-31&user_id=1` `/user_sales_range?start=2021-01-01&end=2021-01-31&group_id=1`
+```
+/user_sales_range?start=2021-01-01&end=2021-01-31 
+/user_sales_range?start=2021-01-01&end=2021-01-31&user_id=1 
+/user_sales_range?start=2021-01-01&end=2021-01-31&group_id=1
+```
