@@ -41,3 +41,55 @@ your browser. You should see a "Hello World" message.
 ## Help
 
 If you have any questions, feel free to reach out to your interview scheduler for clarification!
+
+
+## API Endpoints  
+
+### **1. User Sales**  
+**Endpoint:** `GET /user_sales`  
+
+**Description:**  
+Retrieves sales data per user for a given month, including total sales, average sales, and the number of sales.  
+
+**Query Parameters:**  
+- `month` (string, required) – The month in `YYYY-MM` format.  
+- `user_id` (integer, optional) – Filter by a specific user.  
+- `group_id` (integer, optional) – Filter by a specific group.  
+
+**Examples:**  
+
+`/user_sales?month=2021-01` `/user_sales?month=2021-01&user_id=1` `/user_sales?month=2021-01&group_id=1`
+
+---
+
+### **2. Group Sales**  
+**Endpoint:** `GET /group_sales`  
+
+**Description:**  
+Retrieves sales data per group for a given month, including total sales, average sales, and the number of sales.  
+
+**Query Parameters:**  
+- `month` (string, required) – The month in `YYYY-MM` format.  
+- `group_id` (integer, optional) – Filter by a specific group.  
+
+**Examples:**  
+
+`/group_sales?month=2021-01` `/group_sales?month=2021-01&group_id=1`
+
+---
+
+### **3. User Sales (Date Range)**  
+**Endpoint:** `GET /user_sales_range`  
+
+**Description:**  
+Retrieves sales data per user for a given date range, including total sales, average sales, and the number of sales.  
+
+**Query Parameters:**  
+- `start` (string, required) – Start date in `YYYY-MM-DD` format.  
+- `end` (string, required) – End date in `YYYY-MM-DD` format.  
+- `user_id` (integer, optional) – Filter by a specific user.  
+- `group_id` (integer, optional) – Filter by a specific group.  
+
+**Examples:**  
+
+`/user_sales_range?start=2021-01-01&end=2021-01-31` `/user_sales_range?start=2021-01-01&end=2021-01-31&user_id=1` `/user_sales_range?start=2021-01-01&end=2021-01-31&group_id=1`
